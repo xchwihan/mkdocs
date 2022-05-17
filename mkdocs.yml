@@ -1,4 +1,5 @@
 site_name: Doku von Ami und Marci
+"homepage": "doku.pulcher.xyz"
 theme:
   name: material
 nav:
