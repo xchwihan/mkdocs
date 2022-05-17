@@ -1,6 +1,6 @@
 site_name: Doku von Ami und Marci
 theme:
   name: material
-pages:
--  Home: 'index.md'
+nav:
+- 'index.md'
  
