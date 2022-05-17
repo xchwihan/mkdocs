@@ -1,3 +1,6 @@
-site_name: My Docs
+site_name: Doku von Ami und Marci
 theme:
   name: material
+nav:
+-  Home: 'index.md'
+ 
