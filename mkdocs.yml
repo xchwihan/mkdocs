@@ -3,4 +3,4 @@ theme:
   name: material
 nav:
 - 'index.md'
-- 'test.md' 
+- 'mkdocs-guide/test.md' 
