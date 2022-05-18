@@ -1,0 +1,6 @@
+site_name: Doku von Ami und Marci
+theme:
+  name: material
+nav:
+- 'index.md'
+- 'mkdocs-guide/test.md' 
