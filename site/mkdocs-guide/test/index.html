@@ -13,7 +13,7 @@
     
     
       
-        <title>Test - Doku von Ami und Marci</title>
+        <title>MkDocs - Doku von Ami und Marci</title>
       
     
     
@@ -59,7 +59,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#test" class="md-skip">
+        <a href="#mkdocs" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Test
+              MkDocs
             
           </span>
         </div>
@@ -202,9 +202,74 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          MkDocs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
-        Test
+        MkDocs
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mkdocs-benutzen" class="md-nav__link">
+    MkDocs benutzen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#die-ordnerstruktur" class="md-nav__link">
+    Die Ordnerstruktur
+  </a>
+  
+    <nav class="md-nav" aria-label="Die Ordnerstruktur">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#doku-bearbeiten" class="md-nav__link">
+    Doku bearbeiten
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#doku-pushen" class="md-nav__link">
+    Doku pushen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fehler" class="md-nav__link">
+    Fehler
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -230,6 +295,55 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mkdocs-benutzen" class="md-nav__link">
+    MkDocs benutzen
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#die-ordnerstruktur" class="md-nav__link">
+    Die Ordnerstruktur
+  </a>
+  
+    <nav class="md-nav" aria-label="Die Ordnerstruktur">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#doku-bearbeiten" class="md-nav__link">
+    Doku bearbeiten
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#doku-pushen" class="md-nav__link">
+    Doku pushen
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fehler" class="md-nav__link">
+    Fehler
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -242,7 +356,35 @@
                 
 
 
-<h1 id="test">Test</h1>
+<h1 id="mkdocs">MkDocs</h1>
+<h2 id="mkdocs-benutzen">MkDocs benutzen</h2>
+<p>Um MkDocs zu benutzen, muss man einige Punkte beachten. Wichtig dabei ist, das man im Richtigen Ordner die Dateien verändert, sowie in der Richtigen Reihenfolge die Befehle benutzt.</p>
+<h2 id="die-ordnerstruktur">Die Ordnerstruktur</h2>
+<p>Die Ordnerstruktur sieht so aus:</p>
+<pre><code>mkdocs/mkdocs.yml    # The configuration file.
+mkdocs/docs/
+    index.md  # The documentation homepage.
+    ...       # Other markdown pages, images and other files.
+</code></pre>
+<p>Wichtig dabei ist das man die Doku <em>nur</em> im ../docs Ordner bearbeitet. Niemals unter ../pages.</p>
+<h3 id="doku-bearbeiten">Doku bearbeiten</h3>
+<p>Ist man nun im Verzeichnis <strong>mkdocs/docs/</strong> angekommen, kann man dort Seiten erstellen oder die Vorhandenen bearbeiten. 
+Die <strong>index.md</strong> ist die Startseite der Doku. In dieser müssen die neuen Seiten aufgeschrieben werden.</p>
+<h3 id="doku-pushen">Doku pushen</h3>
+<p>Das hochladen ist etwas komplizierter. </p>
+<p>Als erstes muss man alle neu erstellten Dateien oder veränderten Dateien im Git hinzufügen.</p>
+<p><strong> git add .</strong></p>
+<p>Im Anschluss müssen die änderungen noch commited werden.</p>
+<p><strong> git commit -m "Änderung beschreiben"</strong></p>
+<p>Nachdem alles gespeichert wurde, kann nun die Seite angepasst werden. Dazu muss nur der folgende Befehl ausgeführt werden:</p>
+<p><strong> mkdocs build </strong></p>
+<p>Zuletzt muss das noch deployed werden, damit die Seite es auch mitbekommt.</p>
+<p><strong> mkdocs gh-deploy </strong></p>
+<p>Hier mit den Git Daten einloggen, damit der deploy auch funktioniert.</p>
+<h3 id="fehler">Fehler</h3>
+<p>Manchmal kommt ein Fehler das bereits etwas anderes was verändert hat und man sich erstmal die Änderung ziehen soll.
+Das kann mit folgendem Befehl getan werden.</p>
+<p><strong> git pull https://github.com/xchwihan/mkdocs --allow-unrelated-histories </strong></p>
 
               
             </article>
