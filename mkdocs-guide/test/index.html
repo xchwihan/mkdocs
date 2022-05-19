@@ -376,13 +376,19 @@ Die <strong>index.md</strong> ist die Startseite der Doku. In dieser müssen die
 <pre><code class="language-bash">git add .
 </code></pre>
 <p>Im Anschluss müssen die änderungen noch commited werden.</p>
-<pre><code class="language-bash">git commit -m &quot;Änderung beschreiben&quot;**
+<pre><code class="language-bash">git commit -m &quot;Änderung beschreiben&quot;
+</code></pre>
+<p>Die Änderungen müssen ins Git gepushed werden.</p>
+<pre><code class="language-bash">git push
+</code></pre>
+<p>Danach vorsichtshalber nochmal pullen.</p>
+<pre><code class="language-bash">git pull
 </code></pre>
 <p>Nachdem alles gespeichert wurde, kann nun die Seite angepasst werden. Dazu muss nur der folgende Befehl ausgeführt werden:</p>
-<pre><code class="language-bash">mkdocs build **
+<pre><code class="language-bash">mkdocs build 
 </code></pre>
 <p>Zuletzt muss das noch deployed werden, damit die Seite es auch mitbekommt.</p>
-<pre><code class="language-bash">mkdocs gh-deploy **
+<pre><code class="language-bash">mkdocs gh-deploy
 </code></pre>
 <p>Hier mit den Git Daten einloggen, damit der deploy auch funktioniert.</p>
 <h3 id="fehler">Fehler</h3>
