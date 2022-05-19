@@ -33,19 +33,31 @@ git add .
 Im Anschluss müssen die änderungen noch commited werden.
 
 ```bash
-git commit -m "Änderung beschreiben"**
+git commit -m "Änderung beschreiben"
+```
+
+Die Änderungen müssen ins Git gepushed werden.
+
+```bash
+git push
+```
+
+Danach vorsichtshalber nochmal pullen.
+
+```bash
+git pull
 ```
 
 Nachdem alles gespeichert wurde, kann nun die Seite angepasst werden. Dazu muss nur der folgende Befehl ausgeführt werden:
 
 ```bash
-mkdocs build **
+mkdocs build 
 ```
 
 Zuletzt muss das noch deployed werden, damit die Seite es auch mitbekommt.
 
 ```bash
-mkdocs gh-deploy **
+mkdocs gh-deploy
 ```
 
 Hier mit den Git Daten einloggen, damit der deploy auch funktioniert.
