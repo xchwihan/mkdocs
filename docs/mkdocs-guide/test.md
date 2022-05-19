@@ -26,19 +26,27 @@ Das hochladen ist etwas komplizierter.
 
 Als erstes muss man alle neu erstellten Dateien oder veränderten Dateien im Git hinzufügen.
 
-** git add .**
+```bash
+git add .
+```
 
 Im Anschluss müssen die änderungen noch commited werden.
 
-** git commit -m "Änderung beschreiben"**
+```bash
+git commit -m "Änderung beschreiben"**
+```
 
 Nachdem alles gespeichert wurde, kann nun die Seite angepasst werden. Dazu muss nur der folgende Befehl ausgeführt werden:
 
-** mkdocs build **
+```bash
+mkdocs build **
+```
 
 Zuletzt muss das noch deployed werden, damit die Seite es auch mitbekommt.
 
-** mkdocs gh-deploy **
+```bash
+mkdocs gh-deploy **
+```
 
 Hier mit den Git Daten einloggen, damit der deploy auch funktioniert.
 
@@ -46,5 +54,6 @@ Hier mit den Git Daten einloggen, damit der deploy auch funktioniert.
 
 Manchmal kommt ein Fehler das bereits etwas anderes was verändert hat und man sich erstmal die Änderung ziehen soll.
 Das kann mit folgendem Befehl getan werden.
-
-** git pull https://github.com/xchwihan/mkdocs --allow-unrelated-histories **
+```bash
+git pull https://github.com/xchwihan/mkdocs --allow-unrelated-histories
+```
